@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/instructions_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guess a number between 1 and 100:"
+        android:textColor="@color/textPrimary"
+        android:textSize="18sp"
+        android:layout_centerInParent="true" />
+
+    <EditText
+        android:id="@+id/guess_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instructions_text"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:background="#FFFFFF"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/guess_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guess_input"
+        android:layout_centerHorizontal="true"
+        android:text="Guess"
+        android:textColor="#FFFFFF"
+        android:background="@color/accent"
+        android:textSize="16sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/instructions_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textColor="@color/accent" />
+
+</RelativeLayout>
